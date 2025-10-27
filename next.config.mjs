@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  assetPrefix: './',
   output: "export",
   distDir: "dist",
   images: {
