@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { GitBranch, Github, Star } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Edit, Edit2Icon, GitBranch, Github, Star } from "lucide-react";
 
 export function Header() {
   return (
@@ -11,30 +11,62 @@ export function Header() {
         </div>
 
         <nav className="hidden md:flex items-center space-x-6">
-          <a href="#features" className="text-sm font-medium hover:text-primary transition-colors">
+          <a
+            href="#"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Home
+          </a>
+          <a
+            href="#features"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             Features
           </a>
-          <a href="#how-it-works" className="text-sm font-medium hover:text-primary transition-colors">
+          <a
+            href="#how-it-works"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
             How It Works
           </a>
-          <a href="#community" className="text-sm font-medium hover:text-primary transition-colors">
-            Community
+          {/*<a
+            href="#setup"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Get Started
           </a>
           <a
             href="https://github.com/yourusername/gitresume"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
             Documentation
-          </a>
+          </a> */}
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button variant="outline" size="sm" className="hidden sm:flex items-center space-x-2 bg-transparent">
+          <Button
+            variant="outline"
+            size="sm"
+            className="hidden sm:flex items-center space-x-2 bg-transparent"
+          >
+            <a href="#" className="flex items-center space-x-2">
+              <Edit className="h-4 w-4" />
+              <span>Give feedback</span>
+            </a>
+          </Button>
+          {/* <Button
+            variant="outline"
+            size="sm"
+            className="hidden sm:flex items-center space-x-2 bg-transparent"
+          >
             <Star className="h-4 w-4" />
             <span>Star</span>
-          </Button>
-          <Button asChild>
-            <a href="https://github.com/yourusername/gitresume" className="flex items-center space-x-2">
+          </Button> */}
+          <Button>
+            <a
+              href="https://github.com/iamhabbeboy/gitresume-cli"
+              className="flex items-center space-x-2"
+            >
               <Github className="h-4 w-4" />
               <span>GitHub</span>
             </a>
@@ -42,5 +74,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  )
+  );
 }

@@ -5,26 +5,42 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { GitBranch, Zap, Users, Download, Palette, Shield } from "lucide-react";
+import {
+  CogIcon,
+  GitBranch,
+  Zap,
+  Users,
+  Download,
+  Palette,
+  Shield,
+  Brain,
+  LayoutDashboard,
+} from "lucide-react";
 
 const features = [
+  {
+    icon: CogIcon,
+    title: "Resume Builder",
+    description:
+      "Build a professional resume effortlessly, seed your Git histories for instant insights or create one manually to highlight your experience your way.",
+  },
   {
     icon: GitBranch,
     title: "Git Integration",
     description:
-      "Seamlessly connects to your Git repositories to analyze commit history and extract meaningful project information.",
+      "Gitresume seamlessly connects with your local Git projects, analyzing commit history to extract meaningful insights and project details.",
   },
   {
-    icon: Zap,
-    title: "Instant Generation",
+    icon: Brain,
+    title: "AI Support",
     description:
-      "Generate a professional resume in seconds. No manual data entry required - your commits tell your story.",
+      "Generate personalized insights from your commits with a custom prompt that highlights your work. Gitresume currently supports Llama and OpenAI integrations.",
   },
   {
-    icon: Palette,
-    title: "Customizable Templates",
+    icon: LayoutDashboard,
+    title: "Personalized Dashboard",
     description:
-      "Choose from multiple professional templates and customize the layout to match your personal brand.",
+      "Manage your seeded commits, projects, prompts, and resumes in one place. Refine your content and track your progress effortlessly.",
   },
   {
     icon: Download,
@@ -42,7 +58,18 @@ const features = [
     icon: Shield,
     title: "Privacy First",
     description:
-      "Your data stays private. Process repositories locally or use our secure cloud service.",
+      "Your data stays private. Gitresume processes everything locally.",
+  },
+  {
+    icon: Zap,
+    title: "Save Time",
+    description:
+      "Generate a professional resume in seconds.Nearly 70% of your resume is already done, just add your final touches.",
+  },
+  {
+    icon: Palette,
+    title: "Customizable Templates",
+    description: "We currently offer one template, with more on the way", //Choose from multiple professional templates and customize the layout to match your personal brand.
   },
 ];
 
@@ -52,7 +79,7 @@ export function FeaturesSection() {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Why Choose Devcommit?
+            Why Choose Gitresume?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Built by developers, for developers. Every feature is designed to
