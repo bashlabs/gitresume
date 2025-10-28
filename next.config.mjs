@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  assetPrefix: "https://gitresume.app/",
   output: "export",
   distDir: "dist",
   images: {
