@@ -6,15 +6,22 @@ export function HeroSection() {
     <section className="py-20 px-4 text-center mx-auto">
       <div className="container max-w-4xl mx-auto">
         <div className="space-y-6">
-          <h1 className="text-4xl md:text-6xl font-bold text-balance">
+          {/* <h1 className="text-4xl md:text-6xl font-bold text-balance">
             Transform Your <span className="text-primary">Git Commits</span>{" "}
             Into a Professional Resume
+          </h1> */}
+          <h1 className="text-4xl md:text-6xl font-bold text-balance">
+            Build a Smarter Resume for{" "}
+            <span className="text-primary">Developers</span>
           </h1>
 
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-            Showcase your coding journey with an automatically generated resume
+            Generate a professional resume in seconds and enrich it with
+            insights from your Git activity. Simple, open source, and built for
+            developers who let their work speak for them.
+            {/* Showcase your coding journey with an automatically generated resume
             based on your Git commit history. Perfect for developers who want
-            their work to speak for itself.
+            their work to speak for itself. */}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">

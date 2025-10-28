@@ -7,10 +7,13 @@ import { Suspense } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "GitResume - Generate Your Resume from Git Commits",
+  title: "GitResume - Smart Resume Builder for Developers",
   description:
-    "Transform your Git commit history into a professional resume. Open source tool for developers.",
+    "Build and customize your resume effortlessly. Optionally enhance it with Git insights.",
   generator: "v0.app",
+  icons: {
+    icon: "/gitresume.svg",
+  },
 };
 
 export default function RootLayout({
