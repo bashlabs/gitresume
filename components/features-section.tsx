@@ -34,7 +34,7 @@ const features = [
     icon: Brain,
     title: "AI Support",
     description:
-      "Generate personalized insights from your commits with a custom prompt that highlights your work. Gitresume currently supports Llama and OpenAI integrations.",
+      "Generate personalized insights from your commits with a custom prompt that highlights your work. Gitresume currently supports Llama, Gemini and OpenAI integrations.",
   },
   {
     icon: LayoutDashboard,
