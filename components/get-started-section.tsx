@@ -53,11 +53,7 @@ export default function GettingStarted() {
     },
     windows: {
       install: "choco install gitresume",
-      commands: [
-        "gitresume.exe init",
-        "gitresume.exe seed",
-        "gitresume.exe serve",
-      ],
+      commands,
     },
   };
 
