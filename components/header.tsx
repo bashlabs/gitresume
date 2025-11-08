@@ -56,7 +56,7 @@ export function Header() {
             className="hidden sm:flex items-center space-x-2 bg-transparent"
           >
             <a
-              href="https://github.com/iamhabbeboy/gitresume-cli/issue"
+              href="https://github.com/iamhabbeboy/gitresume-cli/issues"
               className="flex items-center space-x-2"
             >
               <Edit className="h-4 w-4" />
