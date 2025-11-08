@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === "production";
 const nextConfig = {
-  assetPrefix: "https://gitresume.app/",
+  assetPrefix: isProd ? "https://gitresume.app/" : "",
   output: "export",
   distDir: "dist",
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === "production" ? "/gitresume" : "",
+  basePath: isProd ? "/gitresume" : "",
   eslint: {
     ignoreDuringBuilds: true,
   },

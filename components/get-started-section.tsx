@@ -47,7 +47,8 @@ export default function GettingStarted() {
       commands,
     },
     linux: {
-      install: "curl -fsSL https://gitresume.sh/install.sh | bash",
+      install:
+        "curl -sL https://raw.githubusercontent.com/iamhabbeboy/gitresume-cli/main/install.sh | bash",
       commands,
     },
     windows: {

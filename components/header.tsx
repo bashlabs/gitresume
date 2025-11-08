@@ -12,7 +12,7 @@ export function Header() {
 
         <nav className="hidden md:flex items-center space-x-6">
           <a
-            href="#"
+            href="/"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
             Home
@@ -28,6 +28,12 @@ export function Header() {
             className="text-sm font-medium hover:text-primary transition-colors"
           >
             How It Works
+          </a>
+          <a
+            href="wait-list"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Cloud
           </a>
           {/*<a
             href="#setup"
@@ -49,9 +55,12 @@ export function Header() {
             size="sm"
             className="hidden sm:flex items-center space-x-2 bg-transparent"
           >
-            <a href="#" className="flex items-center space-x-2">
+            <a
+              href="https://github.com/iamhabbeboy/gitresume-cli/issue"
+              className="flex items-center space-x-2"
+            >
               <Edit className="h-4 w-4" />
-              <span>Give feedback</span>
+              <span>Open an issue</span>
             </a>
           </Button>
           {/* <Button
