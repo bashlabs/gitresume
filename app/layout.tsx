@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
 import { Suspense } from "react";
 import "./globals.css";
+import { GoogleAnalytics } from "@/components/GoogleAnalytic";
 
 export const metadata: Metadata = {
   title: "GitResume - Smart Resume Builder for Developers",
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
+        <GoogleAnalytics />
       </body>
     </html>
   );
