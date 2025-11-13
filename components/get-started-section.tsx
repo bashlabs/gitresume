@@ -43,7 +43,10 @@ export default function GettingStarted() {
   const commands = ["gitresume init", "gitresume seed", "gitresume serve"];
   const installCmd: Record<string, any> = {
     mac: {
-      install: "brew install gitresume",
+      install: [
+        "brew tap iamhabbeboy/homebrew-tap",
+        "brew install iamhabbeboy/tap/gitresume",
+      ],
       commands,
     },
     linux: {
@@ -52,7 +55,7 @@ export default function GettingStarted() {
       commands,
     },
     windows: {
-      install: "choco install gitresume",
+      install: "choco install gitresume --version=0.1.0",
       commands,
     },
   };
@@ -99,7 +102,13 @@ export default function GettingStarted() {
             </div>
             <div className="text-left font-mono text-sm space-y-2">
               <div className="text-muted-foreground">
-                $ {installCmd[os] && installCmd[os].install}
+                {Array.isArray(installCmd[os]?.install)
+                  ? installCmd[os].install.flatMap((cmd: string, i: number) =>
+                      i === installCmd[os].install.length - 1
+                        ? [`$ ${cmd}`]
+                        : [`$ ${cmd}`, <br key={i} />]
+                    )
+                  : installCmd[os]?.install}
               </div>
               <div className="text-muted-foreground">...</div>
               <div className="text-gray-500"># Once installed, run: </div>
