@@ -26,7 +26,7 @@ export default function GettingStarted() {
       arch = "x86";
     }
 
-    let os = "unknown";
+    let os = "";
     if (platform.includes("win")) os = "windows";
     else if (platform.includes("mac")) os = "mac";
     else if (platform.includes("linux")) os = "linux";
@@ -37,7 +37,7 @@ export default function GettingStarted() {
   const [os, setOs] = useState("windows");
 
   useEffect(() => {
-    setOs(defaultBrowser || "os");
+    setOs(defaultBrowser || "windows");
   }, []);
 
   const commands = ["gitresume init", "gitresume seed", "gitresume serve"];
