@@ -5,6 +5,7 @@ import { HowItWorksSection } from "@/components/how-it-works-section";
 import { CommunitySection } from "@/components/community-section";
 import { Footer } from "@/components/footer";
 import GettingStarted from "@/components/get-started-section";
+import DemoSection from "@/components/demo-section";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
         <HeroSection />
         <FeaturesSection />
         <HowItWorksSection />
+        <DemoSection />
         <GettingStarted />
         {/* <CommunitySection /> */}
       </main>
